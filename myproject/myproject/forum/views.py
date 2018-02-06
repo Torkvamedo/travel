@@ -4,6 +4,7 @@ from .models import Board, Topic , Post
 from .forms import NewTopicForm
 
 
+
 def home(request):
     forum = Board.objects.all()
     return render(request, 'home.html', {'forum':forum})
